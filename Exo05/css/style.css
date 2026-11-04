@@ -1,0 +1,22 @@
+.davy {
+    color: magenta;
+}
+
+.thomas {
+    padding: 1ch;
+    border: dotted 0.5ch turquoise
+}
+
+.shirley {
+    color: blue;
+}
+
+.mathieu {
+    font-family: 'Courier new';
+}
+
+.martin::after {
+    margin-left: 1ch;
+    content: '(Selectionné)';
+    color: hsl(160, 100%, 25%);
+}
