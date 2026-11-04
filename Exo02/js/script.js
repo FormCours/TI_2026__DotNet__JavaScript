@@ -1,3 +1,5 @@
+'use strict';
+
 /* Demandez un prix à l'utilisateur via prompt. Convertissez-le en réel, affichez-le dans la console, puis formatez-le pour un affichage en euros. */
 
 let prix = prompt("Met de l'argent stp");

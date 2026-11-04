@@ -1,3 +1,5 @@
+'use strict';
+
 //! Récuperation des éléments du DOM
 const DOM = {
     inputFruit: document.getElementById('input-fruit'),
@@ -33,7 +35,7 @@ DOM.btnAddFruit.addEventListener('click', function() {
         btnRemove.addEventListener('click', function() {
             fruitElem.remove();
         })
-        
+
         fruitElem.append(btnRemove);
     }
 });

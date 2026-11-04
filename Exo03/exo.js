@@ -1,3 +1,5 @@
+'use strict';
+
 const r01 = 5 > 3
 // → true
 
