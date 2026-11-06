@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Kablammo;
+    src: url('./../fonts/Kablammo-Regular-VariableFont_MORF.ttf');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: deeppink;
+    text-shadow: plum 0.15ch 0.1ch 0.2ch;
+    font-family: Kablammo;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+h1 {
+    font-size: 4em;
+}
+
+#action-button {
+
+    button {
+        background-color: #0080FF;
+        border: none;
+        padding: 0.5em 1em;
+        border-radius: 0.5em;
+        color: snow;
+        font-weight: 400;
+    }
+
+    button:hover {
+        color: gold;
+    }
+
+    button:active {
+        background-color: hsl(210, 100%, 25%);
+    }
+}
+
+#grille {
+    padding: 0.5em;
+
+    display: grid;
+    grid-template-columns: repeat(5, 5em);
+    grid-auto-rows: 5em;
+    gap: 0.5em;
+    
+    .case {
+        border: 0.1ch solid black;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+    }
+}
+
+.vert {
+    background-color: forestgreen;
+}
+
+.rouge {
+    background-color: crimson;
+}
