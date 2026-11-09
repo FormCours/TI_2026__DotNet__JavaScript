@@ -54,3 +54,4 @@ console.info(factorielle(5))
 
 //? - Version lambda et recursive (pour se prend la tête 🤯)
 const factorielle_lambda = (n = 1) => (n <= 1) ? 1 : n * factorielle_lambda(n - 1);
+
