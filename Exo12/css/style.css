@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('./../fonts/Starjedi.ttf');
+}
+
+:root {
+    --nb-col: 4;
+    --spacing: 0.5em;
+    --card-size: 5em;
+    --card-content: 3em;
+    --border-size: 0.1ch;
+
+    --color-grid: grey;
+    --color-card: snow;
+    --color-card-reveal: lavenderblush;
+    --color-border: black;
+}
+
+.card-grid {
+    width: fit-content;
+
+    display: grid;
+    grid-template-columns: repeat(var(--nb-col), var(--card-size));
+    grid-auto-rows: var(--card-size);
+
+    border: solid var(--color-border) var(--border-size);
+    gap: var(--spacing);
+    padding: var(--spacing);
+    user-select: none;
+    background-color: var(--color-grid);
+}
+
+.card {
+    border: solid var(--color-border) var(--border-size);
+    border-radius: 0.2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: var(--card-content);
+    background-color: var(--color-card);
+}
+
+.card.reveal {
+    cursor: auto;
+    background-color: var(--color-card-reveal);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Star Jedi';
+}
+
+#game-msg {
+    font-size: 1.7em;
+    font-family: 'Comic sans MS';
+    color: deeppink;
+}
