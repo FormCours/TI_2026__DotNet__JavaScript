@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 14 JS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Exo 14 JS</h1>
+    </header>
+    <main>
+        <h2>Formulaire</h2>
+        <form id="exo-form" name="exo">
+            <div>
+                <label for="input-firstname">Prénom : </label>
+                <input id="input-firstname" type="text" name="firstname">
+                <span id="error-firstname" class="error"></span>
+            </div>
+            <div>
+                <label for="input-age">Age : </label>
+                <input id="input-age" type="number" name="age">
+                <span id="error-age" class="error"></span>
+            </div>
+            <div>
+                <label for="input-country">Pays : </label>
+                <select id="input-country" name="country">
+                    <option value="belgique">Belgique</option>
+                    <option value="tuvalu">Tuvalu</option>
+                    <option value="japon">Japon</option>
+                </select>
+                <span id="error-country" class="error"></span>
+            </div>
+            <div>
+                <label for="input-condition">J'accepte les conditions <a href="./condition.html">*</a> : </label>
+                <input id="input-condition" type="checkbox" name="condition">
+                <span id="error-condition" class="error"></span>
+            </div>
+            <div>
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+
+        <h2>Resultat</h2>
+        <div id="result"></div>
+    </main>
+</body>
+</html>

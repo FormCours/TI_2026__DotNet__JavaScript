@@ -1,0 +1,102 @@
+* {
+    color: darkmagenta;
+    cursor: url("./../cursors/deadpool.cur") -10 -10, auto;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+    min-height: 100vh;
+}
+
+header {
+    width: 100vw;
+    border-bottom: solid deeppink 0.5ch;
+    padding: 1ch;
+}
+
+main {
+    max-width: 1024px;
+    width: 70vw;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, textarea, select {
+    background-color: mistyrose;
+    border-color: darkmagenta;
+}
+
+input[type="checkbox"] {
+    accent-color: hotpink;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: deeppink;
+    font-family: 'Comic sans MS';
+    margin: 0;
+}
+h2, h3, h4, h5, h6 {
+    margin-top: 0.5em;
+}
+
+button {
+    background-color: plum;
+    border: none;
+    padding: 0.3em 0.8em;
+    border-radius: 1em;
+    font-weight: bold;
+    font-family: "Comic sans MS";
+    color: darkmagenta;
+
+    &:active {
+        background-color: darkmagenta;
+        color: plum;
+    }
+}
+
+table, table th, table td {
+    border: solid plum 0.1ch;
+    border-collapse: collapse;
+    padding: 0.5ch;
+}
+ 
+q {
+    color: plum;
+}
+
+#exo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1ch;
+    width: 100%;
+
+    > div {
+        display: flex;
+        flex-direction: row;
+        gap: 1ch;
+    }
+    > div:has(input[type="text"]), 
+    > div:has(input[type="number"]), 
+    > div:has(select) { 
+        label {
+            flex-basis: 4em;
+        }
+        input, select {
+            flex-grow: 1;
+        }
+    }
+}
+
+.error {
+    color: purple;
+    font-weight: bold;
+}
